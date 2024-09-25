@@ -1,0 +1,145 @@
+.price-list {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 100wh;
+  margin: 0 auto;
+  background-color: #061924;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: rgb(193, 120, 9);
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .service-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 8px;
+
+    .service-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h2 {
+        margin: 0;
+        font-size: 1rem;
+        flex-grow: 1;
+      }
+
+      .service-price {
+        font-size: 1rem;
+        padding-right: 15px;
+        color: #2c3e50;
+        margin-left: 15px;
+        font-weight: bold;
+      }
+
+      button {
+        padding: 10px 10px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #2980b9;
+        }
+      }
+    }
+
+    p {
+      margin-top: 10px;
+      color: #7f8c8d;
+    }
+  }
+}
+
+/* Адаптація для планшетів */
+@media (min-width: 768px) {
+  .price-list {
+    padding: 30px;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    select {
+      width: 50%;
+      font-size: 1.2rem;
+    }
+
+    .service-item {
+      padding: 25px;
+
+      .service-header {
+        h2 {
+          font-size: 1.7rem;
+        }
+
+        .service-price {
+          font-size: 1.4rem;
+          padding-right: 30px;
+        }
+
+        button {
+          padding: 10px 25px;
+        }
+      }
+    }
+  }
+}
+
+/* Адаптація для ПК */
+@media (min-width: 1024px) {
+  .price-list {
+    padding: 40px;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    select {
+      
+      width: 16%;
+    }
+
+    .service-item {
+      padding: 15px;
+
+      .service-header {
+        h2 {
+          font-size: 1.9rem;
+        }
+
+        .service-price {
+          font-size: 1.5rem;
+          padding-right: 30px;
+        }
+
+        button {
+          padding: 12px 30px;
+        }
+      }
+    }
+  }
+}
